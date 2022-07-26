@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+<nav>
+  
+    <div class="nav-link">
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Phone </a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Cart</a></li>
+</ul>
+  </div>
+</nav>
+<h2>Hey check this out!</h2>
+    <div class="info">
+        <div class="overlay"> </div>
+        <img src="m1.png" class="mobile" >
+    <div id="circle">
+    
+    <div class="features one">
+        <img src="b.png" >
+
+<div>   
+    <h1>Battery</h1>
+        <P>5000mh,</P>
+    </div></div>
+    
+
+    <div class="features two">
+        <img src="c.png" >
+
+<div> 
+      <h1>Camera</h1>
+       <p>12MP, wide angle lens</p>
+    </div></div>
+
+
+    <div class="features three">
+        <img src="p.png" >
+
+<div>   
+    <h1>Processor</h1>
+        <P>Sanpdragon 855</P>
+    </div></div>
+
+
+    <div class="features four">
+        <img src="d.png" >
+        
+      <div> 
+           <h1>Display</h1>
+        <p>6.5", Mini-Drop fullScreen</p>
+    </div></div> 
+</div>
+</div>
+
+<div class="controls">
+    <img src="up.png" id="upbtn">
+    <h3>Features</h3>
+    <img src="down.png" id="downbtn">
+</div>
+
+
+    </div>
+
+
+    <script>
+let circle = document.getElementById("circle");
+let upbtn = document.getElementById("upbtn");
+let downbtn = document.getElementById("downbtn");
+
+let rotatevalue = circle.style.transform;
+let rotatesum;
+
+upbtn.onclick = function()
+{
+rotatesum = rotatevalue + "rotate(-90deg)";
+circle.style.transform = rotatesum;
+rotatevalue = rotatesum;
+}
+
+
+downbtn.onclick = function()
+{
+rotatesum = rotatevalue + "rotate(90deg)";
+circle.style.transform = rotatesum;
+rotatevalue = rotatesum;
+}
+
+
+
+    </script>
+</body>
+</html>
